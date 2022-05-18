@@ -17,7 +17,7 @@ public class DeptController {
 	
 	@GetMapping("/deptAll")
 	public String deptALl (Model m) {
-		//만드는중 0518
+		//만드는중!!!! 0518
 		return "dept/deptAll";
 		
 	}
