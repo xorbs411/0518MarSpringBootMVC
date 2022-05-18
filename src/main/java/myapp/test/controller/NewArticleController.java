@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import myapp.test.service.ArticleService;
 import myapp.test.vo.NewArticleCommand;
 
-
 @Controller
 @RequestMapping("/article/newArticle")
 public class NewArticleController {
@@ -36,3 +35,5 @@ public class NewArticleController {
 	}
 
 }
+
+

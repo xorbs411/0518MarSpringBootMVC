@@ -1,17 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>╟т╫ц╠ш ╬╡╠Б</title>
+<title>Й╡▄Л▀°Й╦─ Л⌠╟Й╦╟</title>
 </head>
 <body>
-	╟т╫ц╠ш ╬╡╠Б ют╥б фШ:
+	Й╡▄Л▀°Й╦─ Л⌠╟Й╦╟ Л·┘К═╔ М▐╪:
 	<form method="post">
 		<input type="hidden" name="parentId" value="10"/>
-	     а╕╦Я: <input type="text" name="title"/><br/>
-	     Ё╩©К: <textarea name="content"></textarea><br/>
+	     Л═°К╙╘: <input type="text" name="title"/><br/>
+	     К┌╢Л ╘: <textarea name="content"></textarea><br/>
 	     <input type="submit"/>
 	</form>
 
