@@ -4,15 +4,34 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="myapp.test.scott.dao.DeptDao">
 
+
+
+
+	<!--  <insert id="addDept" parameterType="myapp.test.scott.dto.Dept">
+		insert into dept values(#{deptno),#{dname},#{loc})
+	</insert>-->
+	
+	<insert id="addDept" parameterType="myapp.test.scott.dto.Dept">
+		insert into dept values(#{deptno},#{dname},#{loc})
+	</insert>
+	
+	<update id="updateDept" parameterType="myapp.test.scott.dto.Dept">
+		update dept set dname=#{dname}, loc=#{loc} where deptno=#{deptno}
+	</update>
+	
+	<delete id="deleteDept" parameterType="int">
+		delete from dept where deptno = #{deptno}
+	</delete>
+	
 	<select id="deptAll" resultType="myapp.test.scott.dto.Dept">
-	select*from dept
+		select * from dept order by deptno
 	</select>
-	
-	<select id="deptOne" parameterType="int" resultType="myapp.test.scott.dto.Dept">
-	select*from dept where deptno=#{no} <!--select문은 from부터!dept에 있는 deptno(사원정보)를 *전체에검색한 값을  no에 저장한다.  -->
+	<select id="deptOne" parameterType="int"   
+	                     resultType="myapp.test.scott.dto.Dept">
+		select * from dept where deptno = #{no}
 	</select>
-	
-
-
-
-</mapper>
+	<select id="maxNo" resultType="int">
+		select max(deptno) from dept
+	</select>
+</mapper>  
+  
